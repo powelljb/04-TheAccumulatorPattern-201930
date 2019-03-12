@@ -184,15 +184,42 @@ def draw_lines(n, point, window):
     #       endpoints for each line,
     #          ** FIRST DO A CONCRETE EXAMPLE BY HAND! **
     ###########################################################################
-    # -------------------------------------------------------------------------
-    count = 0
-    total = 100
+    # # -------------------------------------------------------------------------
+    total = -100
     for k in range(n):
         start = point
-        end = rg.Point(point.x+100,point.y-total)
+        end = rg.Point(point.x+100,point.y + total)
         line = rg.Line(start,end)
         line.attach_to(window)
-        total = total+100
+        total = total + 200/(n-1)
+        window.render()
+
+        # end = rg.Point(point.x+100,point.y - total)
+        # line = rg.Line(start,end)
+        # total = total + 100
+
+
+    # total = 0
+    # x = point.x+100
+    # y = point.y+100
+    # for k in range(n):
+    #     end = rg.Point(x,y)
+    #     line = rg.Line(point,end)
+    #     line.attach_to(window)
+    #     x = x + 100
+    #     if k % 2 == 0:
+    #         y = y - 100
+    #     else:
+    #         y = y + 100
+
+    # count = 0
+    # total = 100
+    # for k in range(n):
+    #     start = point
+    #     end = rg.Point(point.x+100,point.y-total)
+    #     line = rg.Line(start,end)
+    #     line.attach_to(window)
+    #     total = total+100
 
     # for k in range(n):
     #     if k % 2 == 0:
