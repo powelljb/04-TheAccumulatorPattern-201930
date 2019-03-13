@@ -171,10 +171,6 @@ def run_test_draw_circles_from_rectangle():
     rectangle.fill_color = 'green'
     rectangle.outline_thickness = 5
     draw_circles_from_rectangle(4, 5, rectangle, window)
-    # window.close_on_mouse_click()
-    # center = rg.Point(350,250)
-    # radius = 50
-    # circle = rg.Circle(center,radius)
 
     title = 'Tests 1 and 2 of DRAW_SQUARES_FROM_CIRCLE: '
     title = title + ' 8 blue in row, 3 in column; then 4 green in row, 5 in column.'
@@ -204,10 +200,7 @@ def run_test_draw_circles_from_rectangle():
     rectangle.outline_thickness = 3
     draw_circles_from_rectangle(6, 10, rectangle, window)
     window.close_on_mouse_click()
-    # center = rg.Point(350, 250)
-    # radius = 50
-    # circle = rg.Circle(center, radius)
-    # circle.outline_color = 'red'
+
 
 
 
@@ -300,24 +293,7 @@ def draw_circles_from_rectangle(m, n, rectangle, window):
 
 
 
-    # height = rectangle.get_height()
-    # radius = height/2
-    # height2 = rectangle.get_width()
-    # radius2 = height2/2
-    # center = rectangle.get_center()
-    # x = 2*center.x
-    # y = center.y
-    # point = rg.Point(x,y)
-    # total1 = 0
-    # count = 0
-    # for k in range(m):
-    #     circle = rg.Circle(point+total1,radius)
-    #     circle.attach_to(window)
-    #     window.render()
-    #     total1 = total1 + (2*center.x)
-    #     count = count+1
-    #     print(count)
-    #
+
     window.render()
 
 
@@ -404,7 +380,7 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
       :type window: rg.RoseWindow
       """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
@@ -431,10 +407,6 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
     height2 = rectangle2.get_height()
 
 
-    # line = rg.Line(center1,center2)
-    # corner = rectangle1.get_lower_left_corner()
-    # x = center1.x - corner.x
-    # y = corner.y - center1.y
 
 
     for k in range(n):
@@ -455,34 +427,7 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
         window.render()
 
 
-        # line = rg.Line(center1, center2)
-        # corner = rectangle1.get_lower_left_corner()
-        # x = center1.x - corner.x
-        # y = corner.y - center1.y
-        # line.color = color1
-        # line.attach_to(window)
-        # center1.x = center1.x - corner.x
-        # center1.y = corner.y - center1.y
-        # difference1 = center1.x - corner.x
-        # difference2 = corner.y - center1.y
-        # center2.x = center2.x - difference1
-        # center2.y = center2.y - difference2
-        # window.render()
-        # print(n)
 
-        # line.color = color1
-        # line.attach_to(window)
-        # window.render()
-        # line.color = color2
-        # line.attach_to(window)
-        # window.render()
-        # if k % 2 == 0:
-        #     line.color = color1
-        #     line.attach_to(window)
-        # else:
-        #     line.color = color2
-        #     line.attach_to(window)
-        # window.render()
 
 
 
